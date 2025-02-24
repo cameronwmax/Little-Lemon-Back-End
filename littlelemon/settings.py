@@ -90,8 +90,8 @@ DATABASES = {
     'default': {
     'ENGINE': 'django.db.backends.mysql',
     'NAME': 'LittleLemon',
-    'USER': 'root',
-    'PASSWORD': 'C4m3r0n!',
+    'USER': 'LittleLemonUser',
+    'PASSWORD': 'abc123',
     'HOST': '127.0.0.1',
     'PORT': '3306',
     'OPTIONS': {
@@ -141,3 +141,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+TEST_DISCOVERY_ROOT = "tests"

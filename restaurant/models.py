@@ -18,6 +18,6 @@ class Menu(models.Model):
   inventory = models.IntegerField(validators=[MaxValueValidator(5)])
 
   def __str__(self):
-    return self.title
+    return f'{self.title} : {str(self.price)}'
 
 # CREATE SUPER USER
